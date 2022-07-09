@@ -93,3 +93,16 @@ $("#saveBtn17").on("click", function () {
   var contentHour17 = $("#content17").val();
   localStorage.setItem("content17", contentHour17);
 });
+
+$("#clearBtn").on("click", function () {
+  localStorage.clear();
+  $("#content9").val("");
+  $("#content10").val("");
+  $("#content11").val("");
+  $("#content12").val("");
+  $("#content13").val("");
+  $("#content14").val("");
+  $("#content15").val("");
+  $("#content16").val("");
+  $("#content17").val("");
+});
