@@ -1,13 +1,14 @@
+$(document).ready(function () {
+  var savedContent9 = localStorage.getItem("hour9");
+  $("#content9").textContent = savedContent9;
+});
 // I need to display the date using moment.js
 
 var today = moment().format("dddd, MMMM Do");
 $("#currentDay").text(today);
 
-let saveBtn = $("#saveBtn");
-let content = $(".content");
-let timeBlock = document.querySelectorAll(".timeBlock");
+const content = $(".content");
 let currentHour = moment().hour();
-console.log(currentHour);
 
 //function that checks the hour of each timeblock and compares it to current hour
 content.each(function () {
@@ -24,33 +25,9 @@ content.each(function () {
   }
 });
 
-// saveableContent = document.getElementById("#content");
-// savedContent = saveableContent.value();
+var contentHour9 = $("#content9").value;
+var saveBtn9 = $("#saveBtn9");
 
-// function saveText() {
-//   localStorage.setItem("savedContent", savedContent);
-// }
-
-// function renderText() {
-//   var savedContent = JSON.parse(localStorage.getItem("saveableContent"));
-
-//   if (savedContent !== null) {
-//     saveableContent = savedContent;
-//   }
-
-//   // need to render saved content into text area
-// }
-
-// function initSaveAndRender() {
-//   saveText();
-//   renderText();
-// }
-
-// button.on("click", function (event) {
-//   event.preventDefault();
-//   initSaveAndRender();
-// });
-
-//I need a save button on each line and I need an event listener that will save the event on that line
-
-// I need a function that will manage the color depending on time of day
+saveBtn9.on("click", function () {
+  localStorage.setItem("content9", contentHour9);
+});
