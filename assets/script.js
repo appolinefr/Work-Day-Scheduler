@@ -51,9 +51,9 @@ content.each(function () {
 
 $("#saveBtn9").on("click", function () {
   var contentHour9 = $("#content9").val();
-  local;
-  Storage.setItem("content9", contentHour9);
+  localStorage.setItem("content9", contentHour9);
 });
+
 $("#saveBtn10").on("click", function () {
   var contentHour10 = $("#content10").val();
   localStorage.setItem("content10", contentHour10);
