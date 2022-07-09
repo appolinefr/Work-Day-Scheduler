@@ -22,7 +22,7 @@ The main challenge for this project was comfortably using JQuery synthax through
 
 ### Link to deployed page
 
-https://appolinefr.github.io/Code-quiz/
+https://appolinefr.github.io/Work-Day-Scheduler/
 
 #### Screenshot of deployed page
 
