@@ -18,7 +18,7 @@ For this challenge I have deepened the JQuery knowledge I gained during class. U
 
 ## Challenges
 
-The main challenge for this project was comfortably using JQuery synthax throughout all the code. Since I have only been using vanilla Javascript until this project, making sure that all the code you are writing is using the correct synthax was a little tricky. A few oversights meant that some functions were not working properly but coming back to the challenge with fresh eyes helped in making sure that vanilla javascript was changed for JQuery!
+The main challenge for this project was to comfortably use JQuery synthax throughout all the code. Since I have only been using vanilla Javascript until this project, making sure that all the code you are writing is using the correct synthax was a little tricky. A few oversights meant that some functions were not working properly but coming back to the challenge with fresh eyes helped in making sure that vanilla javascript was changed for JQuery!
 
 ### Link to deployed page
 
