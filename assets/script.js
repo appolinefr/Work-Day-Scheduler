@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  var savedContent9 = localStorage.getItem("hour9");
-  $("#content9").textContent = savedContent9;
+  var savedContent9 = localStorage.getItem("content9");
+  $("#content9").text = savedContent9;
 });
 // I need to display the date using moment.js
 
@@ -26,8 +26,7 @@ content.each(function () {
 });
 
 var contentHour9 = $("#content9").value;
-var saveBtn9 = $("#saveBtn9");
 
-saveBtn9.on("click", function () {
+$("#saveBtn9").on("click", function () {
   localStorage.setItem("content9", contentHour9);
 });
