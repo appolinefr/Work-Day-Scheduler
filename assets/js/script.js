@@ -1,3 +1,4 @@
+//getting all elements from storage and displaying them on page
 $(document).ready(function () {
   var savedContent9 = localStorage.getItem("content9");
   $("#9").val(savedContent9);
@@ -26,11 +27,12 @@ $(document).ready(function () {
   var savedContent17 = localStorage.getItem("content17");
   $("#17").val(savedContent17);
 });
-// I need to display the date using moment.js
 
+//displaying date
 var today = moment().format("dddd, MMMM Do");
 $("#currentDay").text(today);
 
+//variable for time that will be used to compare current hour and timeblock
 const content = $(".content");
 let currentHour = moment().hour();
 
@@ -55,6 +57,7 @@ content.each(function () {
   }
 });
 
+//event listener on each button that will save content for each time block
 $("#saveBtn9").on("click", function () {
   var contentHour9 = $("#9").val();
   localStorage.setItem("content9", contentHour9);
@@ -100,6 +103,7 @@ $("#saveBtn17").on("click", function () {
   localStorage.setItem("content17", contentHour17);
 });
 
+//the clear button will clear the local storage
 $("#clearBtn").on("click", function () {
   localStorage.clear();
   $("#9").val("");
